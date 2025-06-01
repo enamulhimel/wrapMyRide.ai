@@ -1,0 +1,97 @@
+import React from "react";
+
+interface FrameIconProps {
+  size?: number; // default is 55 (SVG width)
+  className?: string;
+}
+
+const Group6Icon: React.FC<FrameIconProps> = ({ size = 55, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 59 59"
+    fill="none"
+    className={className}
+  >
+  <g style={{ mixBlendMode: "plus-lighter" }} filter="url(#filter0_df_275_4431)">
+    <path d="M19.4094 40.2283V50.6377H29.8188L19.4094 40.2283Z" fill="#D80528"/>
+    <path d="M9 29.8188V40.2282H19.4094L9 29.8188Z" fill="#D80528"/>
+    <path d="M19.4094 29.8188V40.2282H29.8188C29.8188 34.4806 25.1571 29.8188 19.4094 29.8188Z" fill="#D80528"/>
+    <path d="M19.4094 19.4094H9V29.8188L19.4094 19.4094Z" fill="#D80528"/>
+    <path d="M29.8188 9H19.4094V19.4094L29.8188 9Z" fill="#D80528"/>
+    <path d="M29.8188 19.4094H19.4094V29.8188C25.1571 29.8188 29.8188 25.1571 29.8188 19.4094Z" fill="#D80528"/>
+    <path d="M40.2286 19.4094V9H29.8192L40.2286 19.4094Z" fill="#D80528"/>
+    <path d="M50.638 29.8188V19.4094H40.2286L50.638 29.8188Z" fill="#D80528"/>
+    <path d="M40.2286 29.8188V19.4094H29.8192C29.8192 25.1571 34.481 29.8188 40.2286 29.8188Z" fill="#D80528"/>
+    <path d="M40.2286 40.2282H50.638V29.8188L40.2286 40.2282Z" fill="#D80528"/>
+    <path d="M29.8192 50.6377H40.2286V40.2283L29.8192 50.6377Z" fill="#D80528"/>
+    <path d="M29.8192 40.2282H40.2286V29.8188C34.481 29.8188 29.8192 34.4806 29.8192 40.2282Z" fill="#D80528"/>
+  </g>
+  <g style={{ mixBlendMode: "plus-lighter" }} filter="url(#filter1_df_275_4431)">
+    <path d="M19.4094 40.2283V50.6377H29.8188L19.4094 40.2283Z" fill="#E42477"/>
+    <path d="M9 29.8188V40.2282H19.4094L9 29.8188Z" fill="#E42477"/>
+    <path d="M19.4094 29.8188V40.2282H29.8188C29.8188 34.4806 25.1571 29.8188 19.4094 29.8188Z" fill="#E42477"/>
+    <path d="M19.4094 19.4094H9V29.8188L19.4094 19.4094Z" fill="#E42477"/>
+    <path d="M29.8188 9H19.4094V19.4094L29.8188 9Z" fill="#E42477"/>
+    <path d="M29.8188 19.4094H19.4094V29.8188C25.1571 29.8188 29.8188 25.1571 29.8188 19.4094Z" fill="#E42477"/>
+    <path d="M40.2286 19.4094V9H29.8192L40.2286 19.4094Z" fill="#E42477"/>
+    <path d="M50.638 29.8188V19.4094H40.2286L50.638 29.8188Z" fill="#E42477"/>
+    <path d="M40.2286 29.8188V19.4094H29.8192C29.8192 25.1571 34.481 29.8188 40.2286 29.8188Z" fill="#E42477"/>
+    <path d="M40.2286 40.2282H50.638V29.8188L40.2286 40.2282Z" fill="#E42477"/>
+    <path d="M29.8192 50.6377H40.2286V40.2283L29.8192 50.6377Z" fill="#E42477"/>
+    <path d="M29.8192 40.2282H40.2286V29.8188C34.481 29.8188 29.8192 34.4806 29.8192 40.2282Z" fill="#E42477"/>
+  </g>
+  <g style={{ mixBlendMode: "plus-lighter" }} filter="url(#filter2_df_275_4431)">
+    <path d="M19.4094 40.2283V50.6377H29.8188L19.4094 40.2283Z" fill="#FFFE03"/>
+    <path d="M9 29.8188V40.2282H19.4094L9 29.8188Z" fill="#FFFE03"/>
+    <path d="M19.4094 29.8188V40.2282H29.8188C29.8188 34.4806 25.1571 29.8188 19.4094 29.8188Z" fill="#FFFE03"/>
+    <path d="M19.4094 19.4094H9V29.8188L19.4094 19.4094Z" fill="#FFFE03"/>
+    <path d="M29.8188 9H19.4094V19.4094L29.8188 9Z" fill="#FFFE03"/>
+    <path d="M29.8188 19.4094H19.4094V29.8188C25.1571 29.8188 29.8188 25.1571 29.8188 19.4094Z" fill="#FFFE03"/>
+    <path d="M40.2286 19.4094V9H29.8192L40.2286 19.4094Z" fill="#FFFE03"/>
+    <path d="M50.638 29.8188V19.4094H40.2286L50.638 29.8188Z" fill="#FFFE03"/>
+    <path d="M40.2286 29.8188V19.4094H29.8192C29.8192 25.1571 34.481 29.8188 40.2286 29.8188Z" fill="#FFFE03"/>
+    <path d="M40.2286 40.2282H50.638V29.8188L40.2286 40.2282Z" fill="#FFFE03"/>
+    <path d="M29.8192 50.6377H40.2286V40.2283L29.8192 50.6377Z" fill="#FFFE03"/>
+    <path d="M29.8192 40.2282H40.2286V29.8188C34.481 29.8188 29.8192 34.4806 29.8192 40.2282Z" fill="#FFFE03"/>
+  </g>
+  <defs>
+    <filter id="filter0_df_275_4431" x="0.666668" y="0.666668" width="58.3047" height="58.3044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4.16667"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.847059 0 0 0 0 0.0196078 0 0 0 0 0.156863 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_275_4431"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_275_4431" result="shape"/>
+      <feGaussianBlur stdDeviation="1.04167" result="effect2_foregroundBlur_275_4431"/>
+    </filter>
+    <filter id="filter1_df_275_4431" x="0.666668" y="0.666668" width="58.3047" height="58.3044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4.16667"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.894118 0 0 0 0 0.141176 0 0 0 0 0.466667 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_275_4431"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_275_4431" result="shape"/>
+      <feGaussianBlur stdDeviation="1.04167" result="effect2_foregroundBlur_275_4431"/>
+    </filter>
+    <filter id="filter2_df_275_4431" x="0.666668" y="0.666668" width="58.3047" height="58.3044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4.16667"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.996078 0 0 0 0 0.0117647 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_275_4431"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_275_4431" result="shape"/>
+      <feGaussianBlur stdDeviation="1.04167" result="effect2_foregroundBlur_275_4431"/>
+    </filter>
+  </defs>
+</svg>
+);
+
+export default Group6Icon;

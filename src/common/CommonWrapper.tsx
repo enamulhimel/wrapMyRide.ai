@@ -12,7 +12,7 @@ const CommonWrapper: React.FC<CommonWrapperProps> = ({
   return (
     <div
       className={clsx(
-        "max-w-[1440px] w-full mx-auto px-4 md:px-6 lg:px-8",
+        "max-w-[1280px] w-full mx-auto  py-6",
         className
       )}
     >

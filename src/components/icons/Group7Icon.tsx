@@ -1,0 +1,67 @@
+import React from "react";
+
+interface FrameIconProps {
+  size?: number; // default is 55 (SVG width)
+  className?: string;
+}
+
+const Group7Icon: React.FC<FrameIconProps> = ({ size = 55, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size * 56 / 55}
+    viewBox="0 0 55 56"
+    fill="none"
+    className={className}
+  >
+  <g style={{ mixBlendMode: "plus-lighter" }} filter="url(#filter0_df_275_4499)">
+    <path d="M21.556 21.5562H9V46.6683H34.1122V34.1123C27.1776 34.1123 21.5562 28.4907 21.5562 21.5563L21.556 21.5562Z" fill="#FFFE03"/>
+    <path d="M34.1122 9C27.1776 9 21.5562 14.6215 21.5562 21.556H34.1122V34.112C41.0467 34.112 46.6682 28.4904 46.6682 21.556C46.6682 14.6216 41.0466 9 34.1122 9Z" fill="#FFFE03"/>
+  </g>
+  <g style={{ mixBlendMode: "plus-lighter" }} filter="url(#filter1_df_275_4499)">
+    <path d="M21.556 21.5562H9V46.6683H34.1122V34.1123C27.1776 34.1123 21.5562 28.4907 21.5562 21.5563L21.556 21.5562Z" fill="#CC1A70"/>
+    <path d="M34.1119 9C27.1774 9 21.5559 14.6215 21.5559 21.556H34.1119V34.112C41.0465 34.112 46.668 28.4904 46.668 21.556C46.668 14.6216 41.0463 9 34.1119 9Z" fill="#CC1A70"/>
+  </g>
+  <g style={{ mixBlendMode: "plus-lighter" }} filter="url(#filter2_df_275_4499)">
+    <path d="M21.556 22.5559H9V47.6681H34.1122V35.1121C27.1776 35.1121 21.5562 29.4905 21.5562 22.5561L21.556 22.5559Z" fill="#D80528"/>
+    <path d="M34.1119 10C27.1774 10 21.5559 15.6215 21.5559 22.556H34.1119V35.112C41.0465 35.112 46.6679 29.4904 46.6679 22.556C46.6679 15.6216 41.0465 10 34.1119 10Z" fill="#D80528"/>
+  </g>
+  <defs>
+    <filter id="filter0_df_275_4499" x="0.666668" y="0.666668" width="54.3349" height="54.3351" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4.16667"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.996078 0 0 0 0 0.0117647 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_275_4499"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_275_4499" result="shape"/>
+      <feGaussianBlur stdDeviation="1.04167" result="effect2_foregroundBlur_275_4499"/>
+    </filter>
+    <filter id="filter1_df_275_4499" x="0.666668" y="0.666668" width="54.3346" height="54.3351" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4.16667"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.894118 0 0 0 0 0.141176 0 0 0 0 0.466667 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_275_4499"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_275_4499" result="shape"/>
+      <feGaussianBlur stdDeviation="1.04167" result="effect2_foregroundBlur_275_4499"/>
+    </filter>
+    <filter id="filter2_df_275_4499" x="0.666668" y="1.66667" width="54.3346" height="54.3349" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4.16667"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.847059 0 0 0 0 0.0196078 0 0 0 0 0.156863 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_275_4499"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_275_4499" result="shape"/>
+      <feGaussianBlur stdDeviation="1.04167" result="effect2_foregroundBlur_275_4499"/>
+    </filter>
+  </defs>
+</svg>
+);
+
+export default Group7Icon;

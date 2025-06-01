@@ -1,6 +1,12 @@
-@import url("https://fonts.cdnfonts.com/css/roboto");
-@import url("https://fonts.cdnfonts.com/css/lato");
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -9,13 +15,37 @@
   --color-dashboard: #E7F9FF;
 
 
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Lato", sans-serif;
+  --font-primary: "Orbitron", sans-serif;
+  --font-secondary: "Space", sans-serif;
+  --font-orbit: "Orbit", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+  
+
 }
 
 body {
   font-family: var(--font-primary);
- }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p,
+span,
+a,
+li {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 :root {
   --sidebar: hsl(0 0% 98%);
@@ -49,7 +79,343 @@ body {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+
 html {
   scroll-behavior: smooth;
 }
+/* yellow b */
+.btn {
+  background: #FFE600;
+ 
+  cursor: pointer;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 18px;
+padding: 8px 16px;
+  letter-spacing: 0.05rem;
+  color: #000000;
+  position: relative;
+  transition: color 0.25s 0.083s;
+ text-transform: uppercase;
+}
 
+.btn:focus {
+  outline: 1px dotted #55d7dc;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 1 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.draw-border::before {
+  top: 0;       /* fix here */
+  left: 0;      /* fix here */
+  border-top-width: 3px;   /* change from bottom to top */
+  border-left-width: 3px;
+  width: 0;
+  height: 0;
+  animation: drawBefore 3s linear infinite;
+}
+
+.draw-border::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 3px;  /* change from top to bottom */
+  border-right-width: 3px;
+  width: 0;
+  height: 0;
+  animation: drawAfter 3s linear infinite;
+}
+
+.draw-border:hover {
+  color: #000000;
+}
+
+@keyframes drawBefore {
+  0%, 100% {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+    border-color: #BC010A;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    border-color: #BC010A;
+  }
+  75% {
+    width: 0;
+    height: 100%;
+    border-color: #BC010A;
+  }
+}
+
+@keyframes drawAfter {
+  0%, 100% {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+  }
+  25% {
+    width: 0;
+    height: 100%;
+    border-color: #BC010A;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    border-color: #BC010A;
+  }
+  75% {
+    width: 100%;
+    height: 0;
+    border-color: #BC010A;
+  }
+}
+
+
+/* moving border  */
+.custom-button {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  letter-spacing: 0.05rem;
+ 
+  color: #FFFFFFA6;
+  background: #000;
+  border: 2px solid transparent;
+
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  top: 0.15em;
+  left: 0.15em;
+  right: 0.15em;
+  bottom: 0.15em;
+  background: inherit;
+  z-index: -1;
+}
+
+.custom-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+     
+   #BC010A,
+   #FFFC00,
+   #CC1A70
+  );
+  background-size: 300% 300%;
+  animation: gradient 2.5s linear infinite;  /* faster and continuous */
+  opacity: 1;                              /* always visible */
+  z-index: -2;
+  transition: opacity 0.3s ease;
+}
+
+.custom-button:hover {
+  color: #fff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 95% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* for card */
+.custom-card {
+  position: relative;
+
+  overflow: hidden;
+  cursor: default;
+  z-index: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: color 0.3s ease;
+}
+
+.custom-card::before {
+  content: "";
+  position: absolute;
+  top: 0.15em;
+  left: 0.15em;
+  right: 0.15em;
+  bottom: 0.15em;
+  background: inherit;
+  
+ 
+}
+
+.custom-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+
+  padding: 2px;  /* border thickness */
+  background: linear-gradient(
+    90deg,
+    #BC010A,
+    #FFFC00,
+    #CC1A70
+  );
+  background-size: 300% 300%;
+  animation: gradient 2.5s linear infinite;
+ 
+
+  transition: opacity 0.3s ease;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude; /* cut inner area so gradient only shows as border */
+}
+
+/* for glowing button dddd */
+.glowing-box-shadow {
+padding: 8px 12px;
+  
+border: 2px solid #CC1A70;
+
+background: #000;
+
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow:
+      -2px 0 2px #CC1A70,      /* left */
+      0 2px 2px #BC010A,       /* bottom */
+      0 -2px 2px #FFFC00;    /* top-right corner */
+  }
+  to {
+    box-shadow:
+      -4px 0 2px #BC010A,      /* left (stronger) */
+      0 4px 2px #CC1A70,       /* bottom (stronger) */
+      0 -2px 2px #FFFC00;    /* top-right corner (stronger) */
+  }
+}
+
+
+/* offset Button.css */
+.offset {
+  --color: #BC010A;
+  --hover: #FFFC00;
+
+  position: relative;
+  color: #fff;
+  background: transparent;
+  padding: 0.75em 2em;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow:
+    -4px 4px 0 0 #FFFC00,
+    inset -1px 1px 0 0 var(--color);
+  z-index: 1;
+  border: none;
+}
+
+.offset::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: conic-gradient(
+    from 139deg at 50.66% 50%,
+    #CC1A70 14.63deg,
+    #FFE600 164.42deg,
+    #BC010A 360deg
+  );
+  border-radius: 4px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.offset:hover,
+.offset:focus {
+  color: white;
+  background: conic-gradient(
+    from 139deg at 50.66% 50%,
+    #CC1A70 14.63deg,
+    #FFE600 164.42deg,
+    #BC010A 360deg
+  );
+  box-shadow: none;
+}
+
+/* manu hover button  */
+/* src/components/MenuHoverButton.css */
+.menu-hover-btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+}
+
+.menu-hover-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #BC010A, #FFFC00, #CC1A70);
+  background-size: 200% auto;
+  animation: rainbowSlide 2s linear infinite;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-hover-btn:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes rainbowSlide {
+  to {
+    background-position: -200% center;
+  }
+}
